@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+	    <LangVersion>latest</LangVersion>
+	    <EnableHarmony>true</EnableHarmony>
+		<Version>1.0.0</Version>
+    </PropertyGroup>
+
+	<PropertyGroup>
+		<UniqueId>tlitoo.MixedSeedsAndSaplings</UniqueId>
+		<Name>All Mixed Seeds &amp; Saplings</Name>
+		<Description>Makes mixed seeds grow any crop. Adds saplings that do the same for trees.</Description>
+		<Authors>tlitookilakin</Authors>
+		<MinimumApiVersion_Behavior>Update</MinimumApiVersion_Behavior>
+		<MinimumGameVersion_Behavior>UpdateFull</MinimumGameVersion_Behavior>
+	</PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Leclair.Stardew.ModManifestBuilder" Version="2.4.1" />
+        <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
+    </ItemGroup>
+
+</Project>

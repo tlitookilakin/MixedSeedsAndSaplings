@@ -1,0 +1,18 @@
+{
+  /*
+   | This file is automatically updated by ModManifestBuilder
+   | when the project is compiled.
+   | 
+   | Changes made to this file may be overwritten.
+   | 
+   */
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "tlitoo.MixedSeedsAndSaplings",
+  "Name": "All Mixed Seeds & Saplings",
+  "Author": "tlitookilakin",
+  "Version": "1.0.0",
+  "Description": "Makes mixed seeds grow any crop. Adds saplings that do the same for trees.",
+  "MinimumApiVersion": "4.1",
+  "MinimumGameVersion": "1.6.15",
+  "EntryDll": "MixedSeedsAndSaplings.dll"
+}
