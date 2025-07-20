@@ -14,6 +14,7 @@
 		<Name>All Mixed Seeds &amp; Saplings</Name>
 		<Description>Makes mixed seeds grow any crop. Adds saplings that do the same for trees.</Description>
 		<Authors>tlitookilakin</Authors>
+		<UpdateKeys>GitHub:tlitookilakin/MixedSeedsAndSaplings</UpdateKeys>
 		<MinimumApiVersion_Behavior>Update</MinimumApiVersion_Behavior>
 		<MinimumGameVersion_Behavior>UpdateFull</MinimumGameVersion_Behavior>
 	</PropertyGroup>
