@@ -14,5 +14,13 @@
     "Price": 100,
     "SpriteIndex": 1,
     "ExcludeFromShippingCollection": true
+  },
+  "Shrub": {
+    "Name": "Mixed Shrub",
+    "Type": "Seeds",
+    "Category": -74,
+    "Price": 300,
+    "SpriteIndex": 2,
+    "ExcludeFromShippingCollection": true
   }
 }

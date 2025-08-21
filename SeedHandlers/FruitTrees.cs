@@ -37,5 +37,5 @@ internal class FruitTrees : SimpleMixedSeed
 	}
 
 	protected override IEnumerable<string> GetKeys()
-		=> DataLoader.WildTrees(Game1.content).Keys;
+		=> DataLoader.FruitTrees(Game1.content).Keys;
 }

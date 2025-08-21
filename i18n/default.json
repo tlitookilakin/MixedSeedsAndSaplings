@@ -1,6 +1,8 @@
 ﻿{
-  "item.FruitSapling.name": "Mixed Fruit Sapling",
+  "item.FruitSapling.name": "Mysterious Fruit Sapling",
   "item.FruitSapling.desc": "Plants a random fruit tree",
   "item.WildSapling.name": "Mixed Tree Seeds",
-  "item.WildSapling.desc": "Plants a random wild tree"
+  "item.WildSapling.desc": "Plants a random wild tree",
+  "item.Shrub.name": "Mysterious Shrub",
+  "item.Shrub.desc": "Plants a random bush"
 }

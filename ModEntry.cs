@@ -11,19 +11,25 @@ namespace MixedSeedsAndSaplings
 	public class ModEntry : Mod
 	{
 		private static List<SimpleMixedSeed> SimpleSeeds = [];
+		private static Harmony harmony;
 
 		public override void Entry(IModHelper helper)
 		{
-			Harmony harmony = new(ModManifest.UniqueID);
-
-			Crops.Init(helper, harmony);
-			SimpleSeeds = [
-				new FruitTrees(helper, harmony),
-				new WildTrees(helper, harmony)
-			];
+			harmony = new(ModManifest.UniqueID);
+			Crops.Init(Helper, harmony);
 			Assets.Init(helper);
 
 			helper.Events.Content.AssetsInvalidated += Invalidated;
+			helper.Events.GameLoop.GameLaunched += Launched;
+		}
+
+		private void Launched(object? sender, GameLaunchedEventArgs e)
+		{
+			SimpleSeeds = [
+				new FruitTrees(Helper, harmony),
+				new WildTrees(Helper, harmony),
+				new Bushes(Helper, harmony)
+			];
 		}
 
 		private void Invalidated(object? sender, AssetsInvalidatedEventArgs e)

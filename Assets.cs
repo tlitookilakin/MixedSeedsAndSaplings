@@ -27,11 +27,13 @@ internal class Assets
 
 	private static void Requested(object? sender, AssetRequestedEventArgs e)
 	{
-		if (e.Equals(ItemData))
+		var name = e.NameWithoutLocale;
+
+		if (name.Equals(ItemData))
 			e.Edit(AddItems);
-		else if (e.Equals(ItemSheet))
+		else if (name.Equals(ItemSheet))
 			e.LoadFromModFile<Texture2D>("assets/items.png", AssetLoadPriority.Medium);
-		else if (e.Equals(Strings))
+		else if (name.Equals(Strings))
 			e.LoadFrom(GetStrings, AssetLoadPriority.Medium);
 	}
 
@@ -43,8 +45,8 @@ internal class Assets
 		foreach ((var key, var val) in ModContent.Load<IDictionary<string, ObjectData>>("assets/items.json"))
 		{
 			val.Texture = ItemSheet.ToString();
-			val.Description = $"[LocalizedText Mods/tlitoo.MixedSeedsAndSaplings/Strings:items.{key}.desc]";
-			val.DisplayName = $"[LocalizedText Mods/tlitoo.MixedSeedsAndSaplings/Strings:items.{key}.name]";
+			val.Description = $"[LocalizedText Mods/tlitoo.MixedSeedsAndSaplings/Strings:item.{key}.desc]";
+			val.DisplayName = $"[LocalizedText Mods/tlitoo.MixedSeedsAndSaplings/Strings:item.{key}.name]";
 			objs["tlitoo.MixedSeedsAndSaplings_" + key] = val;
 		}
 	}
