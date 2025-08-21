@@ -1,0 +1,18 @@
+﻿{
+  "FruitSapling": {
+    "Name": "Mixed Fruit Sapling",
+    "Type": "Seeds",
+    "Category": -74,
+    "Price": 1000,
+    "SpriteIndex": 0,
+    "ExcludeFromShippingCollection": true
+  },
+  "WildSapling": {
+    "Name": "Mixed Wild Sapling",
+    "Type": "Seeds",
+    "Category": -74,
+    "Price": 100,
+    "SpriteIndex": 1,
+    "ExcludeFromShippingCollection": true
+  }
+}
